@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=IBM+Plex+Serif:ital,wght@1,300;1,700&family=Poppins:wght@300;600;700&display=swap');
+
+body{
+  margin:0;
+  font-family:Poppins;
+  color:black;
+  height:100vh;
+}
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+a{
+  display:block;
+  color:black;
+  font-weight:600;
+  text-decoration:none;
+}
+
+header{
+  background-color:rgba(18, 131, 153,1);
+  display:flex;
+  justify-content:space-between;
+  padding:2em;
+  }
+
+.logo{
+  color:black;
+  font-weight:700;
+}
+ul{
+  display:flex;
+}
+ul a{
+  display:block;
+  padding:0 1em;
+}
+a:hover{
+  color:rgba(30, 194, 181,1);
+}
+
+.content{
+ background-color:rgba(30, 184, 181,0.7);
+ display:grid;
+  text-align:center;
+padding:4em;
+}
+.button,.btn{
+  position:relative;
+}
+.button:before{
+  content:"";
+  position:absolute;
+  width:330px;
+  height:330px;
+  background:rgba(18, 131, 153,0.5);
+  border-radius:50%;
+  bottom:80%;
+  left:-50%;
+  z-index:-1;
+}
+.btn:before{
+  display:none;
+  content:"";
+  position:absolute;
+  width:100px;
+  height:60px;
+  background:rgba(18, 131, 153,0.5);
+  border-radius:50%;
+  bottom:80%;
+  left:50%;
+  z-index:-1;
+}
+button{
+  font-family:Poppins;
+  font-weight:600;
+  background-color:rgba(18, 131, 153,1);
+  color:white;
+  border:none;
+  margin-bottom:20px;
+  border-radius:10px;
+  height:4em;
+}
+button:hover{
+  background-color:rgba(8, 41, 43,1);
+}
+footer{
+  height:15vh;
+  display:grid;
+  background-color:rgba(18, 131, 153,1);
+}
+h3{
+  margin-top:60px;
+  text-align:left;
+  color:black;
+  opacity:0.8;
+}
+h5{
+  text-align:center;
+  letter-spacing:0.2em;
+}
+
+@media only screen and (min-width:700px){
+  h1,h3,span,footer{
+    font-size:1.8em;
+  }
+  h1{
+    text-align:left;
+  }
+  .btn:before{
+    display:none;
+  }
+  button{
+    width:250px;
+  }
+  .button{
+    position:relative;
+  }
+  .button:before{
+    content:"";
+    position:absolute;
+    width:770px;
+    height:770px;
+  }
+  button{
+  }
+  span{
+font-size:1.7em;
+  }
+}
+
+@media only screen and (min-width:1050px){
+  header{
+    font-size:1.5em;
+  }
+  .content{
+    height:70vh;
+  }
+  h1,h3,span{
+    text-align:left;
+    font-size:2.8em;
+  }
+  .button:before{
+  right:500px;
+  bottom:90px;
+  }
+  button{
+    width:700px;
+  }
+}
